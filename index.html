@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <i class="fa-regular fa-user"></i>
+      <a href="#" class="navbar-logo">Yash Doyal</a>
+      <ul class="navbar-menu">
+        <li class="navbar-item dropdown">
+          <a href="javascript:void(0)" class="navbar-link dropdown-toggle"><i class="fa-solid fa-bars"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Phone</a></li>
+            <li class="dropdown-item"><a href="mailto:yashdoyal37@gmail.com" class="dropdown-link">Email me</a></li>
+            <li class="dropdown-item"><a href="https://yash-do.us.stackstaging.com/" class="dropdown-link">My Website </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="background"></div>
+    <img src="IMG_20230219_190643_454[982].jpg" alt="Photo" class="profile-photo">
+  </div>
+  <div class="content "  >
+      <div class="card">
+        <img src="WhatsApp Image 2023-10-16 at 22.14.01_ef3818e1.jpg" alt="img">
+      <h1 class="card-head">Hi... <br>I am Yash Doyal</h1>
+      <p>I am An Computer Science Student and Tech ethusiast <br> Have Good knowledge Of</p> <p><a href="#">frontend Development Technologies</a> and <br> Learning <a href="#">Backend Development Technologies</a></p>
+       
+    </div>
+    <button class="more-btn" style="border: none; border-radius: 100px; background-color: rgb(152, 143, 105);" ><h3 >More About me</h3></button>
+<div class="Edu-container">
+  <div class="LINE"></div>
+  <h1>Education</h1>
+      <div class="education">
+        <ul class="qual">
+          <li><h3> Graduation-Bachloer of Computer applications: <br> 2022 - 2025</h3></li>
+          <a href="#">Mangalmay Institute of Management & technology greater noida </a> <br>
+          <a href="http://www.result4me.com/Result/ResultCCSV?r=220992106299">CCS University meerut - 76.2% </a>
+          <hr>
+          <li><h3>Intermediate - 12th PCM :   2021 - 2022</h3></li>
+          <a href="#"> Jawahar Navodaya Vidhyalaya Sambhal</a> <br>
+          <a href="#"> CBSE board - 70% </a>
+  <hr>
+          <li><h3>High School - 10th science :  2019 - 2020</h3></li>
+          <a href="#"> Jawahar Navodaya Vidhyalaya Bulandshahr </a> <br>
+          <a href="https://drive.google.com/file/d/1JHXJeADjQoFYoII9IlY6ulSxua1k3Dhw/view?usp=drive_link">CBSE board - 76.2% </a>
+        
+        </ul> 
+      </div>
+</div>
+  <div class="skills"> 
+    <div class="Skill-container">
+      <div class="LINE"></div>
+    <div>
+      
+    </div>
+      <h1> Projects</h1>
+          <div class="education">
+            <ul class="qual">
+              <li><h3> PhotoGraphy - Website</h3></li>
+              <a href="#">Using HTML, CSS and Bootstrap technologies </a> <br>
+              <a href="#">Click Here For github </a>
+              <hr>
+              <li><h3> E-commerce website : Amazon Clone </h3></li>
+              <a href="#"> Using HTML, CSS frontend technologies</a> <br>
+              <a href="#">Click Here For github </a>
+      <hr>
+              <li><h3>Music Player Website : Spotify Clone </h3></li>
+              <a href="#">Using HTML, CSS frontend technologies</a> <br>
+              <a href="#"> Click Here For github </a>
+              <hr>
+              <li><h3> Portfolio Website</h3></li>
+              <a href="#">Using HTML, CSS frontend technologies</a> <br>
+              <a href="#"> Click Here For github </a>
+            
+            
+            </ul> 
+          </div>
+    </div>
+  </div>
+  <div class="skil">
+    <div class="LINE"></div>
+    <h1 >Skills</h1>
+    <div class="Skill-container">
+      <ul>
+        <li><h3>HTML</h3></li>
+        <li><h3>CSS</h3></li>
+        <li><h3>C Programming</h3></li>
+        <li><h3>JavaScript</h3></li>
+      </ul>
+      </div>
+  </div>
+  <div class="footer">
+    <p> &copy; 2024, All rights reserved by Yash Doyal <a href="https://yash-do.us.stackstaging.com/">My Web</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // JavaScript for dropdown menu
+    document.querySelector('.dropdown-toggle').addEventListener('click', function() {
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+      dropdownMenu.classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropdown-toggle')) {
+        const dropdowns = document.getElementsByClassName("dropdown-menu");
+        for (let i = 0; i < dropdowns.length; i++) {
+          const openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
